@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login System</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <h2>Welcome 👋</h2>
+        <p>Login or Create Account</p>
+    </div>
+
+    <div class="logreg-box">
+        <!-- SIGN IN -->
+        <form class="form login active">
+            <h2>Sign In</h2>
+
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPass" placeholder="Password">
+
+            <p class="error" id="loginError"></p>
+
+            <button type="button" onclick="login()">Login</button>
+            <p>Don't have account? <span onclick="showSignup()">Sign Up</span></p>
+        </form>
+
+        <!-- SIGN UP -->
+        <form class="form signup">
+            <h2>Sign Up</h2>
+
+            <input type="email" id="signupEmail" placeholder="Email">
+            <input type="password" id="signupPass" placeholder="Password">
+
+            <p class="error" id="signupError"></p>
+
+            <button type="button" onclick="signup()">Create</button>
+            <p>Already have account? <span onclick="showLogin()">Sign In</span></p>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
